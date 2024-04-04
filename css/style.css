@@ -1,3 +1,6 @@
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -164,4 +167,276 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+
+/* Le code du boutton de recherche*/
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(24, 72, 202);
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 20%),
+      rgb(0 0 0 / 20%) 30%,
+      rgb(0 0 0 / 0%)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 60%),
+      inset -2px -2px 3px rgb(0 0 0 / 60%);
+  }
+  
+  .styled:hover {
+    background-color: rgb(255 0 0 / 100%);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 60%),
+      inset 2px 2px 3px rgb(0 0 0 / 60%);
+  }
+
+
+
+/* code du formulaire de la recherche*/
+  form {
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+  }
+  .search {
+    width: 75%;
+  }
+  .submit {
+    width: 70px;
+    background-color: #1c87c9;
+    color: #ffffff;
+  }
+
+
+
+  /* code de la section des images hébergements à marseille a fin de les regrouper*/
+  .image-container {
+    width: ;
+    height: ;
+    display: flex; /* Utilisez Flexbox pour aligner les images sur la même ligne */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante si elles ne rentrent pas */
+}
+
+
+/*le footer*/
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #98989c;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-left img {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-center ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.footer-right ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-right ul li a img {
+    width: 30px; /* Ajustez la taille des icônes de médias sociaux selon vos besoins */
+    height: 30px;
+}
+
+
+
+
+/* section activité à Marseille*/
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.image-item img {
+    width: 100px; /* Ajustez la taille des images selon vos besoins */
+    height: auto;
+    border: 1px solid #ccc; /* Optionnel : ajoute une bordure autour des images */
+    border-radius: 5px; /* Optionnel : ajoute un arrondi aux coins des images */
+}
+
+.image-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* le filtre*/
+.button-container {
+    display: flex;
+    flex-direction: row; /* Modifier la direction en ligne */
+    justify-content: space-around; /* Ajouter un espacement égal entre les boutons */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0065FC;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/*zonde recherche*/
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.search-box {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/*header*/
+header {
+    background-color: #ffffff;
+    color: rgb(3, 3, 3);
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navigation button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: #0056b3;
 }
